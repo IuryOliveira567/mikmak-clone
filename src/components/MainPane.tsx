@@ -1,3 +1,5 @@
+import rightImg from '../images/right-pane-image.png';
+
 function MainPane() {
   return (
     <div className="main-pane">
@@ -14,7 +16,7 @@ function MainPane() {
           </div>
         </div>
         <div className="col-md-6 right-pane">
-          Analitics
+          <img src={ rightImg } alt="MikMak design image" width="95%" height="100%"/>
         </div>
       </div>
     </div>
