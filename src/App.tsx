@@ -3,7 +3,7 @@ import 'bootstrap';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { NavBar } from './components';
+import { NavBar, MainPane } from './components';
 
 function App() {
   return (
@@ -12,6 +12,9 @@ function App() {
         <header>
           <NavBar/>
         </header>
+        <main>
+          <MainPane/>
+        </main>
       </div>
     </>
   )
