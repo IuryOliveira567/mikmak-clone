@@ -1,4 +1,4 @@
-import rightImg from '../images/right-pane-image.png';
+import rightImg from '../assets/images/right-pane-image.png';
 
 function MainPane() {
   return (
