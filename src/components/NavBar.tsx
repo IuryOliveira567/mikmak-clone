@@ -1,4 +1,4 @@
-import logo from '../images/logo-MikMak_white.svg';
+import logo from '../assets/images/logo-MikMak_white.svg';
 
 function NavBar() {
   return (
