@@ -221,4 +221,80 @@ body {
       }
     }
   }
+
+  .inf {
+    height: 40vh;
+
+    .inter-card {
+      background-color: $gray2;
+      height: 100%;
+  
+      div {
+        height: 100% !important;
+
+        .video-pres {
+          display: flex;
+          align-items: center;
+          justify-content: right;
+          padding-right: 30px;
+
+          iframe {
+            width: 500px;
+            height: 280px;
+            max-width: 545px;
+            max-height: 545px;
+          }
+
+          .video-fade-effect {
+            opacity: 0;
+            margin-right: 20%;
+            animation-name: videoPressEffect;
+            animation-duration: 700ms;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+          }
+
+          @keyframes videoPressEffect {
+            0% { opacity: 0; margin-right: 20%;}
+            75% { opacity: 0.45; margin-right: 10%;}
+            100% { opacity: 1; margin-right: 0%;}
+          }
+
+        }
+
+        .mikmak-pres {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 30px;
+
+          h1 {
+            font-weight: 700;
+            font-size: 2.2rem;
+            color: #000;
+          }
+
+          p {
+            font-size: 1.1rem;
+            color: #2d2a2a;
+          }
+          
+          .slide-fade-effect {
+            opacity: 0;
+            margin-left: 30%;
+            animation-name: showPresText;
+            animation-duration: 700ms;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+          }
+
+          @keyframes showPresText {
+            0% { opacity: 0; margin-left: 30%;}
+            75% { opacity: 0.45; margin-left: 10%;}
+            100% { opacity: 1; margin-left: 0%;}
+          }
+        }
+      }
+    }
+  }
 }
