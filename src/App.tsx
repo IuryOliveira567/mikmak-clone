@@ -3,7 +3,7 @@ import 'bootstrap';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { NavBar, MainPane, PartnersPane } from './components';
+import { NavBar, MainPane, PartnersPane, InterCard } from './components';
 
 function App() {
   return (
@@ -18,6 +18,9 @@ function App() {
         <section>
           <PartnersPane/>
         </section>
+        <div className='inf'>
+          <InterCard/>
+        </div>
       </div>
     </>
   )
