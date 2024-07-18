@@ -414,4 +414,49 @@ body {
       }
     }
   }
+
+  .desc-section {
+    background-color: $gray2;
+    height: 50vh;
+    
+    div {
+
+      .profitability-preview {
+        display: flex;
+        justify-content: end;
+        height: 100%;
+        align-items: center !important;
+      }
+
+      .profitability-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left:2%;
+
+        h3 {
+          font-weight: 800;
+          margin-top: 4%;
+          margin-bottom: 1%;
+        }
+
+        ul {
+
+          li {
+            font-weight: 800;
+            font-size: 1.4rem;
+          }
+
+          p {
+            font-size: 1.1rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  .desc-section > div, .desc-section > div > div {
+    height: 100%;
+  }
 }
