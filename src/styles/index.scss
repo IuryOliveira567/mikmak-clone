@@ -27,7 +27,8 @@ body {
         display: block;
       }
 
-      a:hover, a:visited {
+      a:hover,
+      a:visited {
         color: #fff;
       }
 
@@ -59,10 +60,10 @@ body {
             padding-bottom: 15px;
             border-radius: 15px;
             padding: 15px 0;
-            
+
             span {
               display: inline-block;
-              white-space:initial;
+              white-space: initial;
               text-align: center;
               font-size: 0.95rem;
             }
@@ -89,10 +90,11 @@ body {
         box-shadow: 1px 0 3px rgba(0, 0, 0, 0.4);
       }
 
-      a:hover, a:visited {
+      a:hover,
+      a:visited {
         color: $primary_color;
       }
-      
+
       a:hover {
         color: #fff;
         background-color: $primary2;
@@ -120,7 +122,8 @@ body {
           margin-top: 0.3rem;
         }
 
-        h1, p {
+        h1,
+        p {
           color: #fff;
         }
 
@@ -162,10 +165,10 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-top: 2rem;
-    
+
     .carousel-container {
       width: 100%;
-     }
+    }
 
     .partners-pane {
       display: flex;
@@ -182,41 +185,42 @@ body {
         width: 100%;
         height: 100%;
 
-        .carousel1, .carousel2 {
+        .carousel1,
+        .carousel2 {
           width: 100% !important;
           height: 50%;
           padding: 0;
 
-          .react-multi-carousel-track  {
+          .react-multi-carousel-track {
             width: 70vw !important;
           }
 
-         ul {     
-           .react-multi-carousel-item {
-             width: 130px;
-             margin-left: 10px;
-             margin-right: 10px;
-           } 
+          ul {
+            .react-multi-carousel-item {
+              width: 130px;
+              margin-left: 10px;
+              margin-right: 10px;
+            }
 
-           li {
-             width: 230px;
-             height: 45px;
-             cursor: grab;
-
-             img {
-              width: 145px;
+            li {
+              width: 230px;
               height: 45px;
-              padding: 4px;
-              margin-left: 30px;
-              margin-right: 30px;
-              object-fit: contain;
+              cursor: grab;
+
+              img {
+                width: 145px;
+                height: 45px;
+                padding: 4px;
+                margin-left: 30px;
+                margin-right: 30px;
+                object-fit: contain;
+              }
+            }
+
+            li:active {
+              cursor: grabbing;
             }
           }
-
-           li:active {
-             cursor: grabbing;
-           }
-         }
         }
       }
     }
@@ -228,7 +232,7 @@ body {
     .inter-card {
       background-color: $gray2;
       height: 100%;
-  
+
       div {
         display: none;
         height: 100% !important;
@@ -256,11 +260,30 @@ body {
           }
 
           @keyframes videoPressEffect {
-            0% { opacity: 0; margin-right: 20%;}
-            25% { opacity: 0.25; margin-right: 15%;}
-            50% { opacity: 0.45; margin-right: 10%;}
-            75% { opacity: 1; margin-right: 5%;}
-            100% { opacity: 1; margin-right: 0%;}
+            0% {
+              opacity: 0;
+              margin-right: 20%;
+            }
+
+            25% {
+              opacity: 0.25;
+              margin-right: 15%;
+            }
+
+            50% {
+              opacity: 0.45;
+              margin-right: 10%;
+            }
+
+            75% {
+              opacity: 1;
+              margin-right: 5%;
+            }
+
+            100% {
+              opacity: 1;
+              margin-right: 0%;
+            }
           }
 
         }
@@ -281,7 +304,7 @@ body {
             font-size: 1.1rem;
             color: #2d2a2a;
           }
-          
+
           .slide-fade-effect {
             opacity: 0;
             margin-left: 20%;
@@ -292,16 +315,100 @@ body {
           }
 
           @keyframes showPresText {
-            0% { opacity: 0; margin-left: 20%;}
-            25% { opacity: 0.25; margin-left: 15%;}
-            50% { opacity: 0.45; margin-left: 10%;}
-            75% { opacity: 1; margin-left: 5%;}
-            100% { opacity: 1; margin-left: 0%;}
+            0% {
+              opacity: 0;
+              margin-left: 20%;
+            }
+
+            25% {
+              opacity: 0.25;
+              margin-left: 15%;
+            }
+
+            50% {
+              opacity: 0.45;
+              margin-left: 10%;
+            }
+
+            75% {
+              opacity: 1;
+              margin-left: 5%;
+            }
+
+            100% {
+              opacity: 1;
+              margin-left: 0%;
+            }
           }
         }
 
         .show-on-scroll {
           display: flex;
+        }
+      }
+    }
+  }
+
+  .app-section {
+    height: 60vh;
+
+    .app-preview {
+      padding: 2%;
+
+      .show-on-scroll {
+        display: none;
+
+        .preview-discription {
+          padding-left: 0%;
+          animation-name: slide-right;
+          animation-duration: 600ms;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+
+          h3 {
+            font-weight: 800;
+            margin-bottom: 0;
+          }
+
+          ul {
+
+            li {
+              font-weight: 800;
+              font-size: 1.4rem;
+              margin-bottom: 10px;
+            }
+
+            p {
+              font-size: 1.1rem;
+              font-weight: 400;
+            }
+          }
+        }
+
+        @keyframes slide-right {
+          0% { padding-left: 0%;}
+          20% { padding-left: 3%;}
+          40% { padding-left: 6%;}
+          60% { padding-left: 9%;}
+          80% { padding-left: 12%;}
+          100% { padding-left: 15%;}
+        }
+
+        .video-preview {
+          padding-left: 15%;
+          animation-name: slide-left;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+          animation-duration: 700ms;
+        }
+
+        @keyframes slide-left {
+          0% { padding-left: 15%;}
+          20% { padding-left: 12%;}
+          40% { padding-left: 9%;}
+          60% { padding-left: 6%;}
+          80% { padding-left: 3%;}
+          100% { padding-left: 0%;}
         }
       }
     }
