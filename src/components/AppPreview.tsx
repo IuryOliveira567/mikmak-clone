@@ -13,7 +13,6 @@ function AppPreview() {
       },
       { rootMargin: "-300px" }
     );
-    console.log(isIntersecting);
 
     if(isIntersecting) {
       const hiddenEl = document.getElementsByClassName('show-on-scroll')[1] as HTMLElement;

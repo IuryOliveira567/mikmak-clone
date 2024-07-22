@@ -13,10 +13,9 @@ function DescriptionSection() {
       },
       { rootMargin: "-300px" }
     );
-    console.log(isIntersecting);
-
+    
     if(isIntersecting) {
-      const hiddenEl = document.getElementsByClassName('show-on-scroll')[1] as HTMLElement;
+      const hiddenEl = document.getElementsByClassName('show-on-scroll')[2] as HTMLElement;
       hiddenEl.style.display = "flex"
     }
 
@@ -26,8 +25,8 @@ function DescriptionSection() {
   }, [isIntersecting]);
 
   return (
-    <div>
-      <div ref={ ref } className="show-on-scroll row">
+    <div ref={ ref }>
+      <div className="show-on-scroll row">
         <div className="profitability-preview col-md-6">
           <img src={DriveProfitImg} width={500} height={350} />
         </div>
