@@ -414,4 +414,82 @@ body {
       }
     }
   }
+
+  .desc-section {
+    background-color: $gray2;
+    height: 50vh;
+
+    div {
+      .show-on-scroll {
+        display: none;
+      }
+
+      .profitability-preview {
+        display: flex;
+        justify-content: end;
+        height: 100%;
+        align-items: center !important;
+
+        img {
+          margin-right: 15%;
+          animation-name: slide-preview-right;
+          animation-duration: 600ms;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+        }
+
+        @keyframes slide-preview-right {
+          0% { margin-right: 15%;}
+          20% { margin-right: 12%;}
+          40% { margin-right: 9%;}
+          60% { margin-right: 6%;}
+          80% { margin-right: 3%;}
+          100% { margin-right: 0%;}
+        }
+      }
+
+      .profitability-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 0%;
+        
+        animation-name: slide-profit-right;
+        animation-duration: 600ms;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        
+        h3 {
+          font-weight: 800;
+          margin-top: 4%;
+          margin-bottom: 1%;
+        }
+
+        ul {
+
+          li {
+            font-weight: 800;
+            font-size: 1.4rem;
+          }
+
+          p {
+            font-size: 1.1rem;
+            font-weight: 400;
+          }
+        }
+      }
+
+      @keyframes slide-profit-right {
+        0% { padding-left: 15%;}
+        20% { padding-left: 12%;}
+        40% { padding-left: 9%;}
+        60% { padding-left: 6%;}
+        100% { padding-left: 3%;}
+      }
+    }
+  }
+
+  .desc-section > div, .desc-section > div > div {
+    height: 100%;
+  }
 }

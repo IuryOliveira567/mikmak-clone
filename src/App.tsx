@@ -3,7 +3,14 @@ import 'bootstrap';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { NavBar, MainPane, PartnersPane, InterCard, AppPreview } from './components';
+import { 
+  NavBar,
+  MainPane,
+  PartnersPane,
+  InterCard,
+  AppPreview,
+  DescriptionSection
+} from './components';
 
 function App() {
   return (
@@ -23,6 +30,9 @@ function App() {
         </div>
         <div className='app-section'>
           <AppPreview/>
+        </div>
+        <div className='desc-section'>
+          <DescriptionSection/>
         </div>
       </div>
     </>
