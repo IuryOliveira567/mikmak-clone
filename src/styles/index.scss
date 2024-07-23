@@ -492,4 +492,84 @@ body {
   .desc-section > div, .desc-section > div > div {
     height: 100%;
   }
+
+  .platform-preview {
+    height: 90vh !important;
+  }
+
+  .platform-preview > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4%;
+
+    .col-md-6 {
+      padding: 2rem;
+    }
+
+    h1 {
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .preview-card {
+    width: 540px;
+    height: auto;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.4);    
+    
+    .top-image {
+      img {
+        width: 100%;
+      }
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%;
+      padding-top: 3rem;
+      padding-bottom: 4rem;
+
+      button {
+        max-width: 50%;
+        margin-bottom: 20px;
+        font-weight: 700;
+        padding: 8px;
+        box-shadow: 2px 0 1px rgba(0, 0, 0, 0.4);
+        border-radius: 25px;
+      }
+
+      * {
+        margin-left: 2.3rem;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: 700;
+
+        span {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 1.4rem;
+        }
+      }
+
+      h1 {
+        font-size: 1.4rem;
+        font-weight: 700;
+      }
+
+      div {
+        margin: 0;
+      }
+    }
+  }
+
 }
