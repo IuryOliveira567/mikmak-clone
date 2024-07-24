@@ -9,7 +9,8 @@ import {
   PartnersPane,
   InterCard,
   AppPreview,
-  DescriptionSection
+  DescriptionSection,
+  PlatformPreview
 } from './components';
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
         </div>
         <div className='desc-section'>
           <DescriptionSection/>
+        </div>
+        <div className='platform-preview'>
+          <PlatformPreview/>
         </div>
       </div>
     </>
