@@ -25,7 +25,7 @@ function DescriptionSection() {
   }, [isIntersecting]);
 
   return (
-    <div ref={ ref }>
+    <div ref={ ref } className='description-section'>
       <div className="show-on-scroll row">
         <div className="profitability-preview col-md-6">
           <img src={DriveProfitImg} width={500} height={350} />

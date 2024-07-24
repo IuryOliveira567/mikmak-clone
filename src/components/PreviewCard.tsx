@@ -3,7 +3,7 @@ import { CardPropertyName } from '../entities';
 import { useRef } from 'react';
 
 function PreviewCard(props: CardPropertyName) {
-  const cardRef = useRef(null);
+  const cardRef = useRef(null) as any;
 
   const setBgIn= function() {
     cardRef.current.style.backgroundColor = props.hoverBackgroundColor;
@@ -22,14 +22,17 @@ function PreviewCard(props: CardPropertyName) {
         style={{ 'backgroundColor': props.backgroundColor}} 
         onMouseEnter={setBgIn}
         onMouseLeave={setBgOut}
-        ref= { cardRef }
+        ref = { cardRef }
         >
         <button className='btn bg-white fs-5' style={{color: props.backgroundColor }} type='button'>{props.buttonText}</button>
         <div>
           <h1 style={{ color: props.textColor }}>{props.title}</h1>
           <p style={{ color: props.textColor }}>{props.text}</p>
         </div>
-        <a href="#">Learn More <span>&rarr;</span></a>
+        <div className='details-link'>
+          <a href="#">Learn More</a>
+          <i className="fa-solid fa-arrow-right-long"></i>
+        </div>
       </div>
     </div>
   )
