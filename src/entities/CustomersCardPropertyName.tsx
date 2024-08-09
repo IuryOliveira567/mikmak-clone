@@ -1,4 +1,4 @@
-interface ImageData {
+export interface ImageData {
   imageUrl: string,
   alt?: string
 }

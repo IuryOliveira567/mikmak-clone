@@ -1,16 +1,27 @@
-import PropTypes from 'react';
+import PropTypes, { useState, useEffect } from 'react';
 import { CustomersCardPropertyName } from '../entities';
-
+import { ImageData } from '../entities/CustomersCardPropertyName';
+// import CustomerImage from './CustomerImage';
 function CarouselItem(props: CustomersCardPropertyName) {
- 
+  const [imagePath, setImagePath] = useState('');
+
+  useEffect(() => {
+    const loadImage = async () => {
+      const image = await import(`../assets/images/customers/${ props.image.imageUrl }`);
+      setImagePath(image.default);
+    };
+
+    loadImage();
+  }, [props.image.imageUrl]);
+
   const customerSuccessStory = props.costumerSucessStories.map((story: string) => {
     return <li>{ story }</li>;
   });
 
   return(
     <div className="carousel-item">
-      <div className="row">
-        <div className="col-md-7">
+      <div className="row flex-row">
+        <div className="carousel-left col-md-7">
           <h1>{ props.title }</h1>
           <p >{ props.description }</p>
           <ul>
@@ -18,8 +29,8 @@ function CarouselItem(props: CustomersCardPropertyName) {
           </ul>
           <span>{ props.note }</span>
         </div>
-        <div className="col-md-5">
-          <img src='../assets/images/customers/Sabra.webp' alt={ props.image.alt } />
+        <div className="carousel-right col-md-5">
+          <img src={ imagePath } alt={ props.image.alt } width={ '90%' } height={ '90%' }/>
         </div>
       </div>
     </div>
