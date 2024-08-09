@@ -1,7 +1,6 @@
 import PropTypes, { useState, useEffect } from 'react';
 import { CustomersCardPropertyName } from '../entities';
-import { ImageData } from '../entities/CustomersCardPropertyName';
-// import CustomerImage from './CustomerImage';
+
 function CarouselItem(props: CustomersCardPropertyName) {
   const [imagePath, setImagePath] = useState('');
 
@@ -13,9 +12,9 @@ function CarouselItem(props: CustomersCardPropertyName) {
 
     loadImage();
   }, [props.image.imageUrl]);
-
+   
   const customerSuccessStory = props.costumerSucessStories.map((story: string) => {
-    return <li>{ story }</li>;
+    return <li key={ story }>{ story }</li>;
   });
 
   return(
