@@ -4,6 +4,7 @@ export interface ImageData {
 }
 
 interface CustomerCardPropertyNames {
+  id: number,
   title: string,
   description: string,
   costumerSucessStories: string[];

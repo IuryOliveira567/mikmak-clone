@@ -28,11 +28,13 @@ function CustomerStories() {
 
   const customerSuccessStories = CostumersData.CustomersStories.map((customerStory: CustomerCardPropertyNames) => {
     return <CarouselItem
+      id={ customerStory.id }
       title={ customerStory.title }
       description={ customerStory.description }
       costumerSucessStories={ customerStory.costumerSucessStories }
       note={ customerStory.note }
       image={ customerStory.image }
+      key={ customerStory.id }
     />
   });
 
