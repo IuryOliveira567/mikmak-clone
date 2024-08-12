@@ -1,5 +1,6 @@
 import PropTypes, { useState, useEffect } from 'react';
 import { CustomersCardPropertyName } from '../entities';
+import DOMPurify from 'dompurify';
 
 function CarouselItem(props: CustomersCardPropertyName) {
   const [imagePath, setImagePath] = useState('');
@@ -12,19 +13,27 @@ function CarouselItem(props: CustomersCardPropertyName) {
 
     loadImage();
   }, [props.image.imageUrl]);
-   
-  const customerSuccessStory = props.costumerSucessStories.map((story: string) => {
-    return <li key={ story }>{ story }</li>;
-  });
+  
+  const HtmlRenderer = ( htmlString: string) => {
+    const sanitizedHtml = DOMPurify.sanitize(htmlString);
+  
+    return (
+      <li key={htmlString} dangerouslySetInnerHTML={{ __html: sanitizedHtml }}></li>
+    );
+  };
 
+  const customerSuccessStory = props.costumerSucessStories.map((story: string) => {
+    return HtmlRenderer(story);
+  });
+  
   return(
     <div className="carousel-item">
       <div className="row flex-row">
         <div className="carousel-left col-md-7">
           <h1>{ props.title }</h1>
-          <p >{ props.description }</p>
-          <ul>
-            { customerSuccessStory}
+          <p>{ HtmlRenderer(props.description) }</p>
+          <ul className='stories'>
+            { customerSuccessStory }
           </ul>
           <span>{ props.note }</span>
         </div>
