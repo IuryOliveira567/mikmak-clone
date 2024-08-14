@@ -5,3 +5,4 @@ export { default as InterCard } from './InterCard';
 export { default as AppPreview } from './AppPreview';
 export { default as DescriptionSection } from './DescriptionSection';
 export { default as PlatformPreview } from './PlatformPreview';
+export { default as CustomerStories } from './CustomerStories';

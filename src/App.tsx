@@ -10,7 +10,8 @@ import {
   InterCard,
   AppPreview,
   DescriptionSection,
-  PlatformPreview
+  PlatformPreview,
+  CustomerStories
 } from './components';
 
 function App() {
@@ -38,9 +39,12 @@ function App() {
         <div className='platform-preview'>
           <PlatformPreview/>
         </div>
+        <div className='customer-stories'>
+          <CustomerStories/>
+        </div>
       </div>
     </>
   )
 }
 
-export default App
+export default App;
