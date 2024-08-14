@@ -14,31 +14,43 @@ function CarouselItem(props: CustomersCardPropertyName) {
     loadImage();
   }, [props.image.imageUrl]);
   
-  const HtmlRenderer = ( htmlString: string) => {
+  const HtmlRenderer = (htmlString: string) => {
     const sanitizedHtml = DOMPurify.sanitize(htmlString);
   
     return (
-      <li key={htmlString} dangerouslySetInnerHTML={{ __html: sanitizedHtml }}></li>
+      <li key={ htmlString } dangerouslySetInnerHTML={{ __html: sanitizedHtml }}></li>
     );
   };
 
-  const customerSuccessStory = props.costumerSucessStories.map((story: string) => {
+  const customerSuccessStory = props.customerSuccessStories.map((story: string) => {
     return HtmlRenderer(story);
   });
+
+  const getReference = () => {
+    const reference = props.reference;
+
+    return reference ? <div className="reference">
+                         <span>- { reference }</span>
+                       </div>
+           : '';
+  }
   
   return(
-    <div className="carousel-item">
+    <div className="carousel-card">
       <div className="row flex-row">
         <div className="carousel-left col-md-7">
           <h1>{ props.title }</h1>
-          <p>{ HtmlRenderer(props.description) }</p>
-          <ul className='stories'>
+          <p>{ props.description }</p>
+          { getReference() }
+          <ul className='story'>
             { customerSuccessStory }
           </ul>
-          <span>{ props.note }</span>
+          <span className="note">
+            { props.note ? HtmlRenderer(props.note) : '' }
+          </span>
         </div>
         <div className="carousel-right col-md-5">
-          <img src={ imagePath } alt={ props.image.alt } width={ '90%' } height={ '90%' }/>
+          <img src={ imagePath } alt={ props.image.alt } width={ '90%' } height={ '85%' }/>
         </div>
       </div>
     </div>

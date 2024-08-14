@@ -7,7 +7,8 @@ interface CustomerCardPropertyNames {
   id: number,
   title: string,
   description: string,
-  costumerSucessStories: string[];
+  reference?: string,
+  customerSuccessStories: string[];
   note?: string,
   image: ImageData
 }

@@ -3,7 +3,7 @@ import "react-multi-carousel/lib/styles.css";
 import SlideLeftBtn from './SlideLeftBtn';
 import SlideRightBtn from './SlideRightBtn';
 import CarouselItem from "./CarouselItem";
-import CostumersData from '../assets/data/CustomersStories.json';
+import CustomersData from '../assets/data/CustomersStories.json';
 import CustomerCardPropertyNames from '../entities/CustomersCardPropertyName';
 
 function CustomerStories() {
@@ -26,12 +26,13 @@ function CustomerStories() {
     }
   };
 
-  const customerSuccessStories = CostumersData.CustomersStories.map((customerStory: CustomerCardPropertyNames) => {
+  const customerSuccessStories = CustomersData.CustomersStories.map((customerStory: CustomerCardPropertyNames) => {
     return <CarouselItem
       id={ customerStory.id }
       title={ customerStory.title }
       description={ customerStory.description }
-      costumerSucessStories={ customerStory.costumerSucessStories }
+      reference={ customerStory.reference }
+      customerSuccessStories={ customerStory.customerSuccessStories }
       note={ customerStory.note }
       image={ customerStory.image }
       key={ customerStory.id }
@@ -51,7 +52,6 @@ function CustomerStories() {
           ssr={true}
           keyBoardControl={true}
           partialVisible={false}
-          customTransition="all .5"
           transitionDuration={500}
           containerClass="carousel-container"
           removeArrowOnDeviceType={["tablet", "mobile"]}
