@@ -3,9 +3,9 @@
     {
       "id": 0,
       "title": "Sabra drove higher purchase intent than competitors and improved media efficiency by leveraging MikMak Insights to make campaign optimizations.",
-      "description": "MikMak has fundamentally changed how Sabra does marketing, and even improved our overall sales by 14%. Now, we understand full-funnel marketing. We can see what channels, audiences, and objectives move someone towards purchase. We even take those insights outside of MikMak, and have evolved how we work with retailers. MikMak has even impacted our agency partners’ thinking.<br/><br/>- Chief Marketing Officer, Sabra",
+      "description": "MikMak has fundamentally changed how Sabra does marketing, and even improved our overall sales by 14%. Now, we understand full-funnel marketing. We can see what channels, audiences, and objectives move someone towards purchase. We even take those insights outside of MikMak, and have evolved how we work with retailers. MikMak has even impacted our agency partners’ thinking. ",
       "reference": "Chief Marketing Officer, Sabra",
-      "costumerSucessStories": [
+      "customerSuccessStories": [
         "<strong>2x Increase in Purchase Intent Rate</strong> after switching campaign objectives",
         "<strong>+86% Increase in Purchase Intent Rate</strong> after updating campaign creative",
         "<strong>+50% Higher Purchase Intent Rate&nbsp;</strong> than the Grocery vertical"
@@ -14,6 +14,70 @@
       "image": {
         "imageUrl": "Sabra.webp",
         "alt": "Sabra"
+      }
+    },
+    {
+      "id": 1,
+      "title": "Ricola leveraged MikMak to quickly launch shoppable influencer campaigns across Instagram and TikTok to connect consumers to their products during the key cold and flu season.",
+      "description": "In an effort to better connect with consumers, Ricola wanted to run influencer marketing campaigns across top platforms like Instagram, TikTok, and Snapchat. Social media influencers’ recommendations are trusted by 61% of shoppers per Businesswire.",
+      "reference": "",
+      "customerSuccessStories": [
+        "<strong>2.8x Higher Purchase Intent Rate</strong> on TikTok compared to the Health category average",
+        "<strong>1.6x Higher Purchase Intent Rate</strong>  by top performing influencer @_jkrow over the brand average",
+        "<strong>55%</strong> Of consumers interacting with Ricola influencers<strong> prefer to shop at Target</strong>"
+      ],
+      "note": "",
+      "image": {
+        "imageUrl": "Ricola.webp",
+        "alt": "Ricola"
+      }
+    },
+    {
+      "id": 2,
+      "title": "BodyMark by BIC increases consumer engagement and sales by using MikMak Insights to identify shoppers' preferred media platform and creative.",
+      "description": "With MikMak I saw the opportunity to provide shoppers with a seamless path to purchasing our products online while gaining valuable and actionable data and insights for BIC. The results have been tremendous - we've seen huge lifts in engagement, sales, media performance, and even customer ratings and reviews.",
+      "reference": "Global Business Director, BodyMark by BIC",
+      "customerSuccessStories": [
+        "<strong>968% Lift in Attributable Sales</strong> post-MikMak optimizations",
+        "<strong>5x Increase in Purchase Intent Rate</strong> post-MikMak optimizations",
+        "<strong>10x Higher Purchase Intent Rate</strong> on Instagram compared to category benchmark"
+      ],
+      "note": "",
+      "image": {
+        "imageUrl": "Bic.webp",
+        "alt": "Bic"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Clairol drove a major lift in sales at Target by leveraging MikMak Sales Insights to inform creative, messaging, and landing page optimizations.",
+      "description": "Clairol was planning to execute two promotional campaigns at Target: the first from March 31st to April 9th, and the second from May 16th to May 31st. The Clairol team wanted to leverage MikMak Commerce to highlight the promotional messaging in the post-ad click experience, while also being able to measure SKU preference, conversion, and sales lift at Target. While the promotion was Target specific, Clairol wanted to feature multiple retailer options in the MikMak Commerce experience.",
+      "reference": "",
+      "customerSuccessStories": [
+        "<strong>2.4x Lift in Sales</strong> after testing and implementing new creative",
+        "<strong>16x Increase in Purchase Intent Rate</strong> after implementing creative changes",
+        "<strong>66%</strong> Of Purchase Intent from <strong>MikMak- powered Audiences</strong>"
+      ],
+      "note": "",
+      "image": {
+        "imageUrl": "Clairol.webp",
+        "alt": "Clairol"
+      }
+    },
+    {
+      "id": 4,
+      "title": "OxiClean drove category-leading purchase intent by leveraging MikMak on a YouTube Video for Action* activation during the key cold and flu season.",
+      "description": "With high brand awareness, but low household penetration, OxiClean needed to bring in new consumers. To help drive growth, they developed OxiClean Sanitizer during the peak of Covid, hoping to capitalize on germ fears and high consumer demand.",
+      "reference": "",
+      "customerSuccessStories": [
+        "<strong>23% Higher Purchase Intent Rate</strong> vs. category benchmark on Youtube Video for Action",
+        "<strong>72% Lower cost per conversion</strong> vs Q1-22 YouTube Select**",
+        "<strong>+2.2% Lift in Awareness</strong> vs. Q1-22 YouTube benchmark"
+      ],
+      "note": "*YouTube Video for Action is an offering that allows brands to create and place simple, conversion focused campaigns right within the platform<br/>**YouTube Select is the platform’s premium ad offering that provides YT TV and more targeted ad placement",
+      "image": {
+        "imageUrl": "OxiClean.webp",
+        "alt": "OxiClean"
       }
     }
   ]
