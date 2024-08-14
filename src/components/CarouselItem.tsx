@@ -18,12 +18,12 @@ function CarouselItem(props: CustomersCardPropertyName) {
     const sanitizedHtml = DOMPurify.sanitize(htmlString);
   
     return (
-      <li key={ htmlString } dangerouslySetInnerHTML={{ __html: sanitizedHtml }}></li>
+      <span key={ htmlString } dangerouslySetInnerHTML={{ __html: sanitizedHtml }}></span>
     );
   };
 
   const customerSuccessStory = props.customerSuccessStories.map((story: string) => {
-    return HtmlRenderer(story);
+    return <li key={ story }>{ HtmlRenderer(story) }</li>;
   });
 
   const getReference = () => {
@@ -35,6 +35,8 @@ function CarouselItem(props: CustomersCardPropertyName) {
            : '';
   }
   
+  debugger
+
   return(
     <div className="carousel-card">
       <div className="row flex-row">
@@ -50,7 +52,7 @@ function CarouselItem(props: CustomersCardPropertyName) {
           </span>
         </div>
         <div className="carousel-right col-md-5">
-          <img src={ imagePath } alt={ props.image.alt } width={ '90%' } height={ '85%' }/>
+          <img src={ imagePath } alt={ props.image.alt } width={ '90%' } height={ '75%' }/>
         </div>
       </div>
     </div>
