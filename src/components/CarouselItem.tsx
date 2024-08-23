@@ -35,8 +35,6 @@ function CarouselItem(props: CustomersCardPropertyName) {
            : '';
   }
   
-  debugger
-
   return(
     <div className="carousel-card">
       <div className="row flex-row">

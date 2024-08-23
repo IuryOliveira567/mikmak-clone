@@ -6,3 +6,4 @@ export { default as AppPreview } from './AppPreview';
 export { default as DescriptionSection } from './DescriptionSection';
 export { default as PlatformPreview } from './PlatformPreview';
 export { default as CustomerStories } from './CustomerStories';
+export { default as MediaPartners } from './MediaPartners';
