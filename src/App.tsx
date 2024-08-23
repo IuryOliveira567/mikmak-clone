@@ -11,7 +11,8 @@ import {
   AppPreview,
   DescriptionSection,
   PlatformPreview,
-  CustomerStories
+  CustomerStories,
+  MediaPartners
 } from './components';
 
 function App() {
@@ -41,6 +42,9 @@ function App() {
         </div>
         <div className='customer-stories'>
           <CustomerStories/>
+        </div>
+        <div className='media-partners'>
+          <MediaPartners/>
         </div>
       </div>
     </>

@@ -819,4 +819,111 @@ body {
   .react-multi-carousel-dot--active button{
     background-color: #333333;
   }
+
+  .media-partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+    height: 60vh;
+    width: 80%;
+   
+    .partners {
+
+      .partners-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      h1 {
+        display: inline-block;
+        margin-bottom: 4rem;
+        font-weight: 700;
+        color: #000;
+      }
+
+      .carousel4, .carousel5 {
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+      }
+
+      .label1, .label2 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+
+        hr {
+          width: 100%;
+          z-index: 0;
+          color: #000;
+          font-weight: 700;
+          border: 1px solid black;
+        }
+
+        hr, label {
+          display: inline-block;
+        }
+
+        label {
+          position: absolute;     
+          
+          left: 50%;
+          transform: translateX(-50%);
+          
+          z-index: 999;
+          color: #fff;
+          font-weight: 700;
+          padding: 3px 70px;
+          border-radius: 8px;
+        }
+      }
+
+      .label1 {
+        label {
+          background-color: $primary-color;
+        }
+      }
+
+      .label2 {
+        label {
+          background-color: #B9409A;
+        }
+      }
+      
+      ul {
+        .react-multi-carousel-item {
+          width: 130px;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+
+        li {
+          width: 230px;
+          height: 45px;
+          cursor: grab;
+
+          img {
+            width: 145px;
+            height: 45px;
+            padding: 4px;
+            margin-left: 30px;
+            margin-right: 30px;
+            object-fit: contain;
+          }
+        }
+
+        li:active {
+          cursor: grabbing;
+        }
+      }
+
+      .react-multi-carousel-track {
+        width: 70vw !important;
+      }
+    }
+  }
 }
