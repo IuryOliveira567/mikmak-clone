@@ -80,5 +80,31 @@
         "alt": "OxiClean"
       }
     }
+  ],
+  "ResearchResources": [
+    {
+      "id": 0,
+      "imageInfo":  {
+        "imageUrl": "HeadlessCommerce1.webp",
+        "alt": "Headless Commerce"
+      },
+      "description": "How MikMak’s Headless Commerce API Gives Brands Full Control Over eCommerce Experiences"
+    },
+    {
+      "id": 0,
+      "imageInfo":  {
+        "imageUrl": "HeadlessCommerce1.webp",
+        "alt": "Headless Commerce"
+      },
+      "description": "How MikMak’s Headless Commerce API Gives Brands Full Control Over eCommerce Experiences"
+    },
+    {
+      "id": 0,
+      "imageInfo":  {
+        "imageUrl": "HeadlessCommerce1.webp",
+        "alt": "Headless Commerce"
+      },
+      "description": "How MikMak’s Headless Commerce API Gives Brands Full Control Over eCommerce Experiences"
+    }
   ]
 }
