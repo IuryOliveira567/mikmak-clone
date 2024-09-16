@@ -7,3 +7,4 @@ export { default as DescriptionSection } from './DescriptionSection';
 export { default as PlatformPreview } from './PlatformPreview';
 export { default as CustomerStories } from './CustomerStories';
 export { default as MediaPartners } from './MediaPartners';
+export { default as ResearchResources } from './ResearchResources';

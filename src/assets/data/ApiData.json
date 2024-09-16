@@ -80,5 +80,47 @@
         "alt": "OxiClean"
       }
     }
+  ],
+  "ResearchResources": [
+    {
+      "id": 0,
+      "imageInfo":  {
+        "imageUrl": "BlackFriday.webp",
+        "alt": ""
+      },
+      "description": "Maximize Black Friday Sales in Europe: eCommerce Insights and Digital Marketing Tips for Consumer Electronics & Home Appliance Brands"
+    },
+    {
+      "id": 1,
+      "imageInfo":  {
+        "imageUrl": "MikMak.webp",
+        "alt": ""
+      },
+      "description": "From Concept to Cart: How the Right Data and Insights Help Bring Brands’ New Products to Retailer Shelves"
+    },
+    {
+      "id": 2,
+      "imageInfo":  {
+        "imageUrl": "HeadlessCommerce1.webp",
+        "alt": "Headless Commerce"
+      },
+      "description": "How MikMak’s Headless Commerce API Gives Brands Full Control Over eCommerce Experiences"
+    },
+    {
+      "id": 3,
+      "imageInfo":  {
+        "imageUrl": "brand_website_blog.webp",
+        "alt": ""
+      },
+      "description": "Designing a Frictionless Where-to-Buy Solution: Top 10 Secrets for Success"
+    },
+    {
+      "id": 4,
+      "imageInfo":  {
+        "imageUrl": "DigitalShelfInstitute.webp",
+        "alt": ""
+      },
+      "description": "Designing a Frictionless Where-to-Buy Solution: Top 10 Secrets for Success"
+    }
   ]
 }

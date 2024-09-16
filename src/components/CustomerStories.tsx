@@ -3,7 +3,7 @@ import "react-multi-carousel/lib/styles.css";
 import SlideLeftBtn from './SlideLeftBtn';
 import SlideRightBtn from './SlideRightBtn';
 import CarouselItem from "./CarouselItem";
-import CustomersData from '../assets/data/CustomersStories.json';
+import CustomersData from '../assets/data/ApiData.json';
 import CustomerCardPropertyNames from '../entities/CustomersCardPropertyName';
 
 function CustomerStories() {
