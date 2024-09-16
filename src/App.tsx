@@ -12,7 +12,8 @@ import {
   DescriptionSection,
   PlatformPreview,
   CustomerStories,
-  MediaPartners
+  MediaPartners,
+  ResearchResources
 } from './components';
 
 function App() {
@@ -45,6 +46,9 @@ function App() {
         </div>
         <div className='media-partners'>
           <MediaPartners/>
+        </div>
+        <div className='research-resources'>
+          <ResearchResources/>
         </div>
       </div>
     </>
