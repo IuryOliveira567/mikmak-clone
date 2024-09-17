@@ -1,4 +1,4 @@
-import PropTypes, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { CustomersCardPropertyName } from '../entities';
 import DOMPurify from 'dompurify';
 

@@ -29,7 +29,6 @@ function PlatformPreview() {
     );
 
     if (isIntersecting) {
-      console.log(isIntersecting)
       const hiddenEl = document.getElementsByClassName('show-on-scroll')[3] as HTMLElement;
       hiddenEl.style.display = "flex"
     }
