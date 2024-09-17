@@ -4,8 +4,6 @@ import 'react-multi-carousel/lib/styles.css';
 import ResearchCard from './ResourceCard';
 import ApiData from '../assets/data/ApiData.json';
 import ResourceCardName from '../entities/ResourceCardName';
-import SlideLeftBtn from './SlideLeftBtn';
-import SlideRightBtn from './SlideRightBtn';
 
 function ResearchResources() {
   const ResearchResources = ApiData.ResearchResources;
