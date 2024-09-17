@@ -13,7 +13,8 @@ import {
   PlatformPreview,
   CustomerStories,
   MediaPartners,
-  ResearchResources
+  ResearchResources,
+  DemoPane
 } from './components';
 
 function App() {
@@ -50,6 +51,10 @@ function App() {
         <div className='research-resources'>
           <ResearchResources/>
         </div>
+        <div className='demo-pane'>
+          <DemoPane/>
+        </div>
+        <div>a</div>
       </div>
     </>
   )
