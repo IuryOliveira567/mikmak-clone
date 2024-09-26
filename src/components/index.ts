@@ -9,3 +9,4 @@ export { default as CustomerStories } from './CustomerStories';
 export { default as MediaPartners } from './MediaPartners';
 export { default as ResearchResources } from './ResearchResources';
 export { default as DemoPane } from './DemoPane';
+export { default as Footer } from './Footer';

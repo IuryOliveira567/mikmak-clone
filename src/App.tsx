@@ -14,7 +14,8 @@ import {
   CustomerStories,
   MediaPartners,
   ResearchResources,
-  DemoPane
+  DemoPane,
+  Footer
 } from './components';
 
 function App() {
@@ -54,7 +55,9 @@ function App() {
         <div className='demo-pane'>
           <DemoPane/>
         </div>
-        <div>a</div>
+        <div className='footer-pane'>
+          <Footer/>
+        </div>
       </div>
     </>
   )
