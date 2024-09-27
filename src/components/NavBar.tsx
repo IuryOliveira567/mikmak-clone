@@ -2,10 +2,10 @@ import logo from '../assets/images/logo-MikMak_white.svg';
 
 function NavBar() {
   return (
-    <div className="nav-bar d-flex align-items-center justify-content-around">
+    <div className="nav-bar d-flex align-items-center justify-content-center">
       <div className="logo">
         <a href="#">
-          <img src= { logo } alt="MikMak white logo" width="120" height="80" />
+          <img src={logo} alt="MikMak white logo" width="120" height="80" />
         </a>
       </div>
       <nav>
@@ -35,20 +35,22 @@ function NavBar() {
           </li>
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Partnerships</a>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Partners</a></li>
-                <li><a className="dropdown-item" href="#">Retailer Partnerships</a></li>
-              </ul>
+            <ul className="dropdown-menu">
+              <li><a className="dropdown-item" href="#">Partners</a></li>
+              <li><a className="dropdown-item" href="#">Retailer Partnerships</a></li>
+            </ul>
           </li>
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Resources</a>
             <ul className="dropdown-menu">
               <li><a className="dropdown-item" href="#">Guides & Research</a></li>
               <li><a className="dropdown-item" href="#">Blog</a></li>
-              <li><a className="dropdown-item" href="#">Case Studies</a></li>                <li><a className="dropdown-item" href="#">Blog</a></li>
+              <li><a className="dropdown-item" href="#">Case Studies</a></li>
               <li><a className="dropdown-item" href="#">Events</a></li>
               <li><a className="dropdown-item" href="#">Newsletter</a></li>
+
               <li><a className="dropdown-item" href="#">Podcast</a></li>
+
             </ul>
           </li>
           <li className="nav-item dropdown">
