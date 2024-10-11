@@ -1,4 +1,5 @@
 @import './colors.scss';
+@import './responsive.scss';
 
 .raleway {
   font-family: "Raleway", sans-serif;
@@ -25,11 +26,6 @@ body {
       padding-bottom: 4px;
       margin: 0;
 
-      > div {
-        margin-left: 5rem;
-        margin-right: 5rem;
-      }
-
       .nav {
         a {
           color: #fff;
@@ -37,23 +33,19 @@ body {
           font-weight: 600;
           display: block;
         }
-  
+
         a:hover,
         a:visited {
           color: #fff;
         }
-  
-        .dropdown:hover .dropdown-menu {
-          display: block !important;
-        }
-  
+
         .dropdown-menu {
           background-color: $primary3;
           width: 280px;
-  
+
           li {
             color: #fff;
-  
+
             a {
               display: block;
               margin: auto;
@@ -61,12 +53,12 @@ body {
               padding: 10px;
               font-size: 0.9em;
             }
-  
+
             a:hover {
               background-color: #55A2A4;
               border-radius: 5px;
             }
-  
+
             div {
               display: flex;
               flex-direction: column;
@@ -75,7 +67,7 @@ body {
               padding-bottom: 15px;
               border-radius: 15px;
               padding: 15px 0;
-  
+
               span {
                 display: inline-block;
                 white-space: initial;
@@ -83,12 +75,12 @@ body {
                 font-size: 0.95rem;
               }
             }
-  
+
             div:hover {
               background-color: #55A2A4;
             }
           }
-  
+
           li:hover {
             background-color: $primary3;
           }
@@ -104,16 +96,29 @@ body {
           font-weight: 800;
           box-shadow: 1px 0 1px rgba(0, 0, 0, 0.4);
         }
-  
+
         a:hover,
         a:visited {
           color: $primary_color;
         }
-  
+
         a:hover {
           color: #fff;
           background-color: $primary2;
           transition: all 0.1s linear;
+        }
+      }
+
+      .mobile-menu {
+        cursor: pointer;
+
+        div {
+          width: 28px;
+          height: 1px;
+          background-color: #fff;
+          border-radius: 25px;
+          margin-top: 5px;
+          padding: 2px;
         }
       }
     }
@@ -1174,7 +1179,8 @@ body {
               display: flex;
             }
 
-            input[type="text"], input[type="email"] {
+            input[type="text"],
+            input[type="email"] {
               width: 100%;
             }
 
@@ -1185,14 +1191,14 @@ body {
               font-weight: normal;
               color: #fff;
             }
-            
+
             input[type='checkbox']:checked {
               background-color: #fff;
             }
 
             input[type="checkbox"] {
               text-align: center;
-              appearance:none;
+              appearance: none;
               box-shadow: none;
               vertical-align: middle;
               accent-color: #fff;
@@ -1204,7 +1210,7 @@ body {
 
             input[type='checkbox']:checked:after {
               content: '\2713';
-              color:$primary-color;
+              color: $primary-color;
               display: inline-block;
               position: relative;
               transform: translate(-6%, -25%);
