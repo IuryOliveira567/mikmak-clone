@@ -155,14 +155,14 @@
     }
 
     .main-pane {
-      height: 90vh;
-      padding-top: 8%;
+      height: 70vh !important;
+      padding-top: 4% !important;
 
       .left-pane {
         width: 50%;
 
         div {
-          padding-top: 25%;
+          padding-top: 18%;
           border-radius: 0 40px 40px 0;
 
           h1 {
@@ -183,6 +183,16 @@
         img {
           height: 55%;
           width: 100%;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .main-pane {
+      .right-pane {
+        img {
+          height: 80%;
         }
       }
     }
@@ -269,12 +279,6 @@
           }
         }
       }
-
-      .right-pane {
-        img {
-          height: 70%;
-        }
-      }
     }
   }
 
@@ -320,7 +324,7 @@
       }
       .right-pane {
         img {
-          height: 60%;
+          height: 70%;
           width: 60%;
         }
       }
