@@ -124,6 +124,15 @@
         display: none;
       }
     }
+
+    .partners-pane {
+      .react-multi-carousel-track {
+        li.react-multi-carousel-item  {
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
   }
 
   @media screen and (min-width: 530px) {
