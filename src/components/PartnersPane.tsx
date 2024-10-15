@@ -80,7 +80,7 @@ function Partners() {
       items: 2
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 464, min: 320 },
       items: 1
     }
   };
