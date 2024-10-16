@@ -252,7 +252,7 @@ body {
 
     .inter-card {
       background-color: $gray2;
-      height: 100%;
+      padding-bottom: 20px;
 
       div {
         display: none;
@@ -267,8 +267,6 @@ body {
           iframe {
             width: 500px;
             height: 280px;
-            max-width: 545px;
-            max-height: 545px;
           }
 
           .video-fade-effect {
@@ -313,7 +311,6 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          padding-left: 30px;
 
           h1 {
             font-weight: 700;

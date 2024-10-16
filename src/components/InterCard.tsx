@@ -32,10 +32,10 @@ function InterCard() {
         <div className="col-md-6 mikmak-pres">
           <h1 className="slide-fade-effect">Why MikMak</h1>
           <p className="slide-fade-effect">
-            We grow brands commerce-first, globally. Spanning 100<br/>
-            countries and 7000 Media & Retailer Partners Worldwide. Our<br/>
-            brand, retailer, and consumer insights will guide and impact<br/>
-            decision-making across your entire organization to drive real<br/>
+            We grow brands commerce-first, globally. Spanning 100
+            countries and 7000 Media & Retailer Partners Worldwide. Our
+            brand, retailer, and consumer insights will guide and impact
+            decision-making across your entire organization to drive real
             business results.
           </p>
         </div>
