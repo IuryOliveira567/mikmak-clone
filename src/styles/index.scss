@@ -368,10 +368,8 @@ body {
   }
 
   .app-section {
-    height: 60vh;
 
     .app-preview {
-      padding: 2%;
 
       .show-on-scroll {
         display: none;
@@ -409,28 +407,23 @@ body {
           }
 
           20% {
-            padding-left: 3%;
+            padding-left: 2%;
           }
 
           40% {
-            padding-left: 6%;
+            padding-left: 5%;
           }
 
           60% {
-            padding-left: 9%;
-          }
-
-          80% {
-            padding-left: 12%;
+            padding-left: 8%;
           }
 
           100% {
-            padding-left: 15%;
+            padding-left: 10%;
           }
         }
 
         .video-preview {
-          padding-left: 15%;
           animation-name: slide-left;
           animation-timing-function: linear;
           animation-fill-mode: forwards;
@@ -439,7 +432,7 @@ body {
 
         @keyframes slide-left {
           0% {
-            padding-left: 15%;
+            padding-left: 13%;
           }
 
           20% {
@@ -452,10 +445,6 @@ body {
 
           60% {
             padding-left: 6%;
-          }
-
-          80% {
-            padding-left: 3%;
           }
 
           100% {
