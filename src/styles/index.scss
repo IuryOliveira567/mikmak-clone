@@ -642,21 +642,15 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      height: 100%;
-      padding-top: 3rem;
-      padding-bottom: 4rem;
+      height: auto;
+      padding-top: 1rem;
 
       button {
-        max-width: 50%;
         margin-bottom: 25px;
         font-weight: 700;
         padding: 8px;
         box-shadow: 2px 0 1px rgba(0, 0, 0, 0.4);
         border-radius: 25px;
-      }
-
-      * {
-        margin-left: 2.3rem;
       }
 
       .details-link {
@@ -668,16 +662,14 @@ body {
           text-decoration: none;
           font-size: 1.3rem;
           font-weight: 700;
-          max-width: 50%;
+          margin-right: 10px;
         }
 
         i {
           font-size: 1.1rem;
-          ;
           color: #fff;
           margin-top: 2px;
           width: 40px;
-          margin-left: 10px;
         }
       }
 
@@ -693,8 +685,6 @@ body {
         p {
           line-height: 2rem;
           font-weight: 500;
-          padding-left: 5px;
-          padding-right: 5px;
           text-align: start;
         }
       }

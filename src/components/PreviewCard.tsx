@@ -19,7 +19,7 @@ function PreviewCard(props: CardPropertyName) {
         <img src={props.img} alt='Home platform image preview' />
       </div>
       <div className='card-body'
-        style={{ 'backgroundColor': props.backgroundColor}} 
+        style={{ 'backgroundColor': props.backgroundColor}}
         onMouseEnter={setBgIn}
         onMouseLeave={setBgOut}
         ref = { cardRef }

@@ -259,6 +259,85 @@
         }
       }
     }
+
+    .platform-preview {
+      padding-top: 1rem;
+      height: auto !important;
+
+      .show-on-scroll {
+
+        h1 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+        
+        p {
+          font-size: 0.9rem;
+          width: 80%;
+        }
+
+        .row {
+          
+          .col-md-6 {
+            display: flex;
+            justify-content: space-around;
+
+            .preview-card {
+              width: 95%;
+              height: auto;
+
+              .top-image {
+                height: fit-content;
+              }
+
+              .card-body {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding-bottom: 1.4rem;
+
+                button {
+                  padding: 12px;
+                  font-size: 0.9rem !important;
+                }
+
+                div {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+
+                  h1 {
+                    font-size: 1.2rem;
+                    text-align: center;
+                    width: 80%;
+                  }
+
+                  p {
+                   line-height: 1.6rem;
+                   text-align: center;
+                  }
+                }
+
+                .details-link {
+                  display: flex;
+                  flex-direction: row;
+                  padding: 0;
+
+                  a {
+                    font-size: 0.8rem;
+                    text-align: center;
+                  }
+
+                  i {
+                    font-size: 0.9rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   @media screen and (min-width: 420px) {
@@ -280,6 +359,18 @@
           .profitability-desc {
             h3 {
               width: auto;
+            }
+          }
+        }
+      }
+    }
+
+    .platform-preview {
+      .show-on-scroll {
+        .row {
+          .col-md-6 {
+            .preview-card {
+              width: 80%;
             }
           }
         }
@@ -345,6 +436,34 @@
           .profitability-desc {
             p {
               width: 400px;
+            }
+          }
+        }
+      }
+    }
+
+    .platform-preview {
+      .show-on-scroll {
+        .preview-card {
+          width: 80%;
+
+          .card-body > div {
+            p {
+              width: 250px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .platform-preview {
+      .show-on-scroll {
+        .row {
+          .col-md-6 {
+            .preview-card {
+              width: 70%;
             }
           }
         }
@@ -514,6 +633,14 @@
         }
       }
     }
+
+    .platform-preview {
+      .show-on-scroll {
+        .preview-card {
+          width: 90% !important;
+        }
+      }
+    }
   }
 
   @media screen and (min-width: 1000px) {
@@ -669,6 +796,24 @@
         }
       }
     }
+
+    .platform-preview {
+      .show-on-scroll {
+        .row {
+          .col-md-6 {
+            .preview-card {
+              .card-body {
+                div {
+                  p {
+                    width: 400px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   @media screen and (min-width: 1256px) {
@@ -771,6 +916,90 @@
           .profitability-desc {
             width: 40% !important;
             margin-left: 2rem;
+          }
+        }
+      }
+    }
+
+    .platform-preview {
+      .show-on-scroll {
+        h1 {
+          font-size: 3rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+        }
+
+        .row {
+
+          .col-md-6 {
+
+            + div {
+              display: block;
+            }
+
+            .preview-card {
+              width: 60% !important;
+            }
+
+            .preview-card {
+              .card-body {
+                padding-top: 1.8rem;
+                padding-bottom: 1.8rem;
+
+                button {
+                  padding: 15px 35px;
+                }
+
+                div {
+                  h1 {
+                    font-size: 1.7rem;
+                  }
+
+                  p {
+                    width: 80%;
+                  }
+                }
+
+                .details-link {
+                  padding-top: 0.6rem;
+
+                  a {
+                    font-size: 1rem;
+                  }
+                }
+              }
+            }
+          }
+
+          .col-md-6:first-child {
+            display: block;
+
+            > div {
+              float: right;
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1380px) {
+    .platform-preview {
+      .show-on-scroll {
+        .row {
+          .col-md-6 {
+            .preview-card {
+              .card-body {
+                div {
+                  p {
+                    width: 75%;
+                  }
+                }
+              }
+            }
           }
         }
       }
