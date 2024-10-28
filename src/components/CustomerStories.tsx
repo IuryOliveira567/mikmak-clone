@@ -28,14 +28,14 @@ function CustomerStories() {
 
   const customerSuccessStories = CustomersData.CustomersStories.map((customerStory: CustomerCardPropertyNames) => {
     return <CarouselItem
-      id={ customerStory.id }
-      title={ customerStory.title }
-      description={ customerStory.description }
-      reference={ customerStory.reference }
-      customerSuccessStories={ customerStory.customerSuccessStories }
-      note={ customerStory.note }
-      image={ customerStory.image }
-      key={ customerStory.id }
+      id={customerStory.id}
+      title={customerStory.title}
+      description={customerStory.description}
+      reference={customerStory.reference}
+      customerSuccessStories={customerStory.customerSuccessStories}
+      note={customerStory.note}
+      image={customerStory.image}
+      key={customerStory.id}
     />
   });
 
@@ -60,8 +60,8 @@ function CustomerStories() {
           additionalTransfrom={0}
           className="carousel-customers"
           arrows={true}
-          customLeftArrow={<SlideLeftBtn/>}
-          customRightArrow={<SlideRightBtn/>}
+          customLeftArrow={<SlideLeftBtn />}
+          customRightArrow={<SlideRightBtn />}
           renderArrowsWhenDisabled={true}
           centerMode={false}
           partialVisbile={true}
@@ -71,7 +71,7 @@ function CustomerStories() {
           rewindWithAnimation={false}
           rtl={false}
         >
-          { customerSuccessStories }
+          {customerSuccessStories}
         </Carousel>
       </div>
     </div>
