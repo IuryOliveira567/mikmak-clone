@@ -692,7 +692,6 @@ body {
   }
 
   .customer-stories {
-    height: 120vh;
     padding-top: 4%;
     background-color: $gray2;
 
@@ -702,14 +701,13 @@ body {
       h1 {
         font-weight: 700;
         color: #000;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
       }
 
       div {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
         height: 100%;
 
         .carousel-customers {
@@ -746,11 +744,10 @@ body {
 
             .row {
               width: 80%;
-              height: 100%;
               padding: 5px;
 
               .carousel-left {
-
+                div {
                 h1 {
                   font-size: 1.8rem;
                   font-weight: 700;
@@ -761,7 +758,6 @@ body {
 
                 p {
                   font-size: 1.3rem;
-                  margin-top: 10px;
                   color: #000;
                 }
 
@@ -782,13 +778,10 @@ body {
                 div.reference {
                   display: flex;
                   align-items: start;
-                  width: 100%;
                   height: auto;
 
                   span {
                     font-size: 1.3rem;
-                    padding-top: 8px;
-                    padding-bottom: 8px;
                   }
                 }
 
@@ -796,6 +789,7 @@ body {
                   font-size: 0.8rem;
                 }
               }
+            } 
             }
           }
         }
