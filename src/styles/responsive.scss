@@ -408,6 +408,24 @@
         }
       }
     }
+
+    .media-partners {
+      .partners {
+        .partners-title {
+          h1 {
+            display: block;
+            text-align: center;
+          }
+        }
+
+        .label1, .label2 {
+          label {
+            font-size: 0.8rem;
+            padding: 5px 5px;
+          }
+        }
+      }
+    }
   }
 
   @media screen and (min-width: 420px) {
@@ -547,6 +565,16 @@
             .preview-card {
               width: 70%;
             }
+          }
+        }
+      }
+    }
+
+    .media-partners {
+      .partners {
+        .label1, .label2 {
+          label {
+            padding: 8px 25px;
           }
         }
       }
@@ -754,6 +782,17 @@
                 }
               }
             }
+          }
+        }
+      }
+    }
+
+    .media-partners {
+      .partners {
+        .label1, .label2 {
+          label {
+            font-size: 0.9rem;
+            padding: 8px 25px;
           }
         }
       }
