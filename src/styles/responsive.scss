@@ -438,6 +438,41 @@
         }
       }
     }
+
+    .demo-pane {
+      .demo-pn {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+        .demo-left {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          
+          img {
+            width: 50%;
+          }
+        }
+
+        .demo-right {
+          padding: 0;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          h1 {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+          }
+
+          a {
+            padding: 10px 8px;
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
   }
 
   @media screen and (min-width: 420px) {
@@ -595,6 +630,26 @@
       }
     }
 
+    .demo-pane {
+      .demo-pn {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .demo-left {
+          width: 50%;
+
+          img {
+            margin-left: 15%;
+            width: 80%;
+          }
+        }
+
+        .demo-right {
+          width: 50%;
+          padding-left: 1rem;
+        }
+      }
+    }
   }
 
   @media screen and (min-width: 600px) {
@@ -846,6 +901,36 @@
         }
       }
     }
+
+    .demo-pane {
+      .demo-pn {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .demo-left {
+          width: 50%;
+
+          img {
+            margin-left: 15%;
+            width: 80%;
+          }
+        }
+
+        .demo-right {
+          width: 50%;
+          padding-left: 1rem;
+
+          h1 {
+            font-size: 1.5rem;
+          }
+
+          a {
+            padding: 10px 15px;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
   }
 
   @media screen and (min-width: 1000px) {
@@ -864,6 +949,23 @@
             iframe {
               width: 60% !important;
             }
+          }
+        }
+      }
+    }
+
+    .demo-pane {
+      .demo-pn {
+        .demo-right {
+          padding-left: 4rem;
+          
+          h1 {
+            font-size: 1.5rem;
+          }
+
+          a {
+            padding: 10px 15px;
+            font-size: 1rem;
           }
         }
       }
@@ -1204,6 +1306,23 @@
                 }
               }
             }
+          }
+        }
+      }
+    }
+
+    
+    .demo-pane {
+      .demo-pn {
+        .demo-right {      
+          padding-left: 3rem;    
+          h1 {
+            font-size: 2.1rem;
+          }
+
+          a {
+            padding: 15px 20px;
+            font-size: 1rem;
           }
         }
       }
